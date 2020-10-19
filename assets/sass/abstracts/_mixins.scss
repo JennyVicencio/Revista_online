@@ -1,0 +1,58 @@
+// Mixin itself
+@mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+
+@mixin link_colors {
+  text-decoration: none;
+    &:link{
+      color: black;
+    } 
+    &:visited{
+      color: sienna;
+    }
+    &:hover{
+      color: coral;
+    }
+    &:active{
+      color: grey;
+    }
+}
+
+
+@mixin news-link_colors {
+  text-decoration: none;
+  &:link{
+    color: black;
+  } 
+  &:visited{
+    color: darkgrey;
+  }
+  &:hover{
+    color: coral;
+  }
+  &:active{
+    color: grey;
+  }
+}
+
+
+@mixin tags-link_colors {
+  text-decoration: none;
+  &:link{
+    color: white;
+  } 
+  &:visited{
+    color: darkgrey;
+  }
+  &:hover{
+    background-color: coral;
+  }
+  &:active{
+    background-color: darksalmon;
+  }
+}

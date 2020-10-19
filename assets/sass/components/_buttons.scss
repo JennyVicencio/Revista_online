@@ -1,0 +1,24 @@
+
+.sidebar{
+    &__tag-item{
+        padding: 2px 4px;
+        background-color: steelblue;
+        margin-right: 1px;
+        color: white;    
+            @include tags-link_colors;
+        }
+}
+
+
+.newsletter{
+
+    &__form input, &__form button {
+        font-size: 13px;
+    }
+    &__form button {
+        background-color: coral;
+        color: white;
+    }
+}
+
+

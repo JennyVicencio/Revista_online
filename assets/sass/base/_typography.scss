@@ -1,0 +1,63 @@
+/* Base Typography*/
+body *{
+    font-family: monospace;
+}
+
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav {
+    &__logo {
+        font-size: 30px;
+    }
+
+    &__navbar {
+        &__item {
+        font-size: 20px;
+            @include link_colors;
+        }
+    }
+}
+
+.news{
+    &__card {
+        &__link {
+            @include news-link_colors;
+        }
+        &__Text{
+        font-size: 182px;
+        }
+    }
+}
+
+.sidebar{
+    &__about{
+        &__text{
+            color: grey;        
+        }
+    }
+    &__title{
+        font-size: xx-large;
+    }
+    &__tags__list{
+        text-align: right;
+    }
+}
+
+
+.newsletter{
+    &__title{
+        font-size: 24px;
+    }
+
+}
+
+
+.footer{
+    &__span{
+        font-size: 18px;
+    }
+}

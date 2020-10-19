@@ -1,0 +1,337 @@
+/* Base Styles*/
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* Base Typography*/
+body * {
+  font-family: monospace;
+}
+
+.logo {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav__logo {
+  font-size: 30px;
+}
+.nav__navbar__item {
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav__navbar__item:link {
+  color: black;
+}
+.nav__navbar__item:visited {
+  color: sienna;
+}
+.nav__navbar__item:hover {
+  color: coral;
+}
+.nav__navbar__item:active {
+  color: grey;
+}
+
+.news__card__link {
+  text-decoration: none;
+}
+.news__card__link:link {
+  color: black;
+}
+.news__card__link:visited {
+  color: darkgrey;
+}
+.news__card__link:hover {
+  color: coral;
+}
+.news__card__link:active {
+  color: grey;
+}
+.news__card__Text {
+  font-size: 182px;
+}
+
+.sidebar__about__text {
+  color: grey;
+}
+.sidebar__title {
+  font-size: xx-large;
+}
+.sidebar__tags__list {
+  text-align: right;
+}
+
+.newsletter__title {
+  font-size: 24px;
+}
+
+.footer__span {
+  font-size: 18px;
+}
+
+.nav {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 20px;
+  border-bottom: 1px solid lightgray;
+  margin: auto;
+  box-shadow: gainsboro 0px 2px 10px;
+}
+.nav::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.nav__logo {
+  display: block;
+  float: left;
+}
+.nav__navbar {
+  display: block;
+  float: right;
+  line-height: 35px;
+}
+.nav__navbar__item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.nav__input-menu {
+  border-radius: 20px;
+  border: 1px solid lightcoral;
+}
+
+.main-section {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.news {
+  width: 81%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news__card {
+  width: 30%;
+  margin: 20px 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.news__card__img {
+  width: 100%;
+  border: 2px solid white;
+  box-shadow: gainsboro 0px 2px 10px;
+}
+.news__card__img:hover {
+  opacity: 0.8;
+}
+.news__card__img img {
+  width: 100%;
+}
+.news__card__text {
+  padding: 0px 0px;
+}
+
+.sidebar {
+  width: 19%;
+  float: left;
+  margin: 20px auto;
+}
+.sidebar__about {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.sidebar__tags {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.sidebar__featured {
+  width: 100%;
+}
+.sidebar__featured__img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: gainsboro 0px 2px 10px;
+}
+.sidebar__featured__img:hover {
+  opacity: 0.8;
+}
+.sidebar__featured__img img {
+  width: 100%;
+}
+
+.newsletter {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  background-color: lightgrey;
+  padding: 50px 30px;
+}
+.newsletter__form input, .newsletter__form button {
+  display: inline-block;
+  border-width: 0;
+  padding: 5px 10px;
+}
+.newsletter__form button {
+  background-color: coral;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer__p {
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .sidebar {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+  }
+  .news .news__card {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .news .news__card__img {
+    height: 250px;
+  }
+  .news .news__card__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nav__logo.logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .nav__navbar__item:first-child {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sidebar {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+  }
+  .news__card {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .news__card__img {
+    height: 250px;
+  }
+  .news__card__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nav__navbar__item:first-child {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sidebar {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+  }
+  .news .news__card {
+    width: 91.66666667%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .news .news__card__img {
+    height: 300px;
+  }
+  .news .news__card__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nav__navbar__item:first-child {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sidebar {
+    width: 25%;
+  }
+
+  .news {
+    width: 75%;
+  }
+  .news .news__card {
+    width: 41.66666667%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav, .footer {
+    width: 100%;
+  }
+}
+.sidebar__tag-item {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+  text-decoration: none;
+}
+.sidebar__tag-item:link {
+  color: white;
+}
+.sidebar__tag-item:visited {
+  color: darkgrey;
+}
+.sidebar__tag-item:hover {
+  background-color: coral;
+}
+.sidebar__tag-item:active {
+  background-color: darksalmon;
+}
+
+.newsletter__form input, .newsletter__form button {
+  font-size: 13px;
+}
+.newsletter__form button {
+  background-color: coral;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

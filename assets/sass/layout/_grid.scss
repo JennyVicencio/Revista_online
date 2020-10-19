@@ -1,0 +1,111 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+    .sidebar{
+        display: none;
+    }
+    .news{
+        width: 100%;
+        .news__card{
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            &__img {
+                height: 250px;
+                & img{
+                    height: 100%;
+                    object-fit: cover; 
+                }
+            }
+        }
+    }
+
+    .nav__logo.logo {
+        margin-right: auto;
+        margin-left: auto;    }
+
+    .nav__navbar__item:first-child{
+        display: none;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .sidebar{
+        display: none;
+    }
+    .news{
+        width: 100%;
+        &__card{
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            &__img {
+                height: 250px;
+                & img{
+                    height: 100%;
+                    object-fit: cover; 
+                }
+            }
+        }
+    }
+    .nav__navbar__item:first-child{
+        display: none;
+    }
+} 
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .sidebar{
+        display: none;
+    }
+    .news{
+        width: 100%;
+        .news__card{
+            width: 91.66666667%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            &__img {
+                height: 300px;
+                & img{
+                    height: 100%;
+                    object-fit: cover;                
+                }
+            }
+        }
+    }
+
+    .nav__navbar__item:first-child{
+        display: none;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .sidebar{
+        width: 25%;
+    }
+
+    .news{
+        width: 75%;
+        .news__card{
+            width: 41.66666667%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .nav, .footer{
+        width: 100%;
+    }
+}
